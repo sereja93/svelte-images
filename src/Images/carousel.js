@@ -4,7 +4,7 @@ import Carousel from "./Carousel.svelte";
 import { open as openStore, close as closeStore } from "./modalStore.js";
 
 
-export const open = (images, curr_idx) => {
-  openStore(Carousel, { images, curr_idx })
+export const open = (images, curr_idx, showDownloadBtn, imageDownloadClickAction) => {
+  openStore(Carousel, { images, curr_idx, showDownloadBtn, imageDownloadClickAction })
 };
 export const close = closeStore;

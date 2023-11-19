@@ -8,7 +8,9 @@
   export let numCols;
   const popModal = idx =>
     setTimeout(() => {
-      open(images, idx);
+        open(images, idx, true, (url) => {
+            console.log(url)
+        });
     }, 0);
 
   let galleryElems;
